@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVP Burgers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hsl(0, 9%, 24%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            background-image: linear-gradient(45deg, #e9eb74, #ab21c7);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #fefefe;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .menu-link {
+            background: linear-gradient(145deg, #ffbc00, #ff8a00);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            width: 250px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-link i {
+            margin-right: 15px;
+            font-size: 2rem;
+        }
+
+        .menu-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(145deg, #ff8a00, #ffbc00);
+        }
+
+        .menu-link:active {
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .menu-link {
+                font-size: 1.2rem;
+                padding: 15px 30px;
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .menu-link {
+                font-size: 1rem;
+                padding: 12px 25px;
+                width: 160px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to NVP Burgers!</h1>
+    <p>Delicious Burgers, Sandwiches, Desserts, and Ice Cream Await You!</p>
+
+    <div class="menu-links">
+        <a href="burgers.html" class="menu-link">
+            <i class="fas fa-burger"></i> 🍔 Burgers
+        </a>
+        <a href="sandwiches.html" class="menu-link">
+            <i class="fas fa-sandwich"></i> 🥪 Sandwiches
+        </a>
+        <a href="desserts.html" class="menu-link">
+            <i class="fas fa-cake"></i> 🍰 Desserts
+        </a>
+        <a href="ice-cream.html" class="menu-link">
+            <i class="fas fa-ice-cream"></i> 🍦 Ice Cream
+        </a>
+    </div>
+
+    <!-- Include Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
